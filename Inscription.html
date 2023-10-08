@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>canada_<span>go</span></h1>
+        <ul>
+            <li><a href="">Apropos</a></li>
+            <li><a href="">Nos services</a></li>
+            <li><a href="">Contactez-nous</a></li> 
+            <li><a href="Inscription.html" id="in">INSCRIPTION</a></li>
+        </ul>
+    </header>
+    <section>
+        <div id="west">
+            <h2>Inscription</h2>
+            <form action="" method="post" onsubmit="return verifier()">
+                <fieldset>
+                    <p id="h">Tous les champs identifiés d'un astérisque(*) sont obligatoires</p>
+                    <div class="container">
+                        <div>
+                            <label for="em">*Courriel</label><br>
+                            <input type="text" name="em" id="em"><br>
+                            <label for="mot">*Mot de passe</label><br>
+                            <input type="password" name="mot" id="mot" oninput="ma9bolouno()">  <img src="eye.png" alt="" id="eye"><input type="checkbox" name="" id="checkeyepass" onclick="show();" onmouseover="changeEyeColor(true)" onmouseout="changeEyeColor(false)"><br> 
+                            <span id="i3jeb"></span><br>
+                            <img src="th.jpeg" alt="" id="recap"><input type="checkbox" name="bot" id="bot" onclick="activer()"><span>Je ne suis pas un robot</span>
+                        </div>
+                        <div>
+                            <label for="lang">*Langue de correspondance</label><br>
+                            <select name="lang" id="lang">
+                                <option value="">choix</option>
+                                <option value="français">français</option>
+                                <option value="allemand">allemand</option>
+                                <option value="arabe">arabe</option>
+                                <option value="anglais">anglais</option>
+                            </select><br>
+                            <label for="cmot">Confirmer le mot de passe</label><br>
+                            <input type="password" name="cmot" id="cmot"><br> 
+                            <input type="submit" value="Continuer" id="but" disabled> 
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p id="ptit">Tous droits réservés 2022_2023</p> <!-- Corrected the spelling of "réservés" -->
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
